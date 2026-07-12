@@ -20,22 +20,19 @@ jobs:
     
     - name: Build iOS App
       run: |
-        xcodebuild -workspace SoundAmplifier.xcworkspace -scheme SoundAmplifier -sdk iphoneos -configuration Release -derivedDataPath build CODE_SIGN_IDENTITY=\"\" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO || xcodebuild -project SoundAmplifier.xcodeproj -scheme SoundAmplifier -sdk iphoneos -configuration Release -derivedDataPath build CODE_SIGN_IDENTITY=\"\" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
-      working-directory: ./SoundAmplifier
-      continue-on-error: true
+        xcodebuild -project SoundAmplifier.xcodeproj -scheme SoundAmplifier -sdk iphoneos -configuration Release -derivedDataPath build CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO CODE_SIGNING_ALLOWED=NO
+      continue-on-error: false
     
     - name: Create IPA
       run: |
         mkdir -p Payload
-        cp -r build/Release-iphoneos/SoundAmplifier.app Payload/SoundAmplifier.app 2>/dev/null || echo "App not found, trying alternative"
+        cp -r build/Release-iphoneos/SoundAmplifier.app Payload/SoundAmplifier.app
         zip -r SoundAmplifier.ipa Payload/
-      working-directory: ./SoundAmplifier
-      continue-on-error: true
+      continue-on-error: false
     
     - name: Upload IPA as artifact
       uses: actions/upload-artifact@v4
       with:
         name: SoundAmplifier-app
-        path: ./SoundAmplifier/SoundAmplifier.ipa
+        path: SoundAmplifier.ipa
         retention-days: 30
-      continue-on-error: true
