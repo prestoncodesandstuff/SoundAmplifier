@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "SoundAmplifier"
+               BlueprintIdentifier = "0000152D02C7E14AF6800025"
                BuildableName = "SoundAmplifier.app"
                BlueprintName = "SoundAmplifier"
                ReferencedContainer = "container:SoundAmplifier.xcodeproj">
@@ -42,7 +42,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "SoundAmplifier"
+            BlueprintIdentifier = "0000152D02C7E14AF6800025"
             BuildableName = "SoundAmplifier.app"
             BlueprintName = "SoundAmplifier"
             ReferencedContainer = "container:SoundAmplifier.xcodeproj">
