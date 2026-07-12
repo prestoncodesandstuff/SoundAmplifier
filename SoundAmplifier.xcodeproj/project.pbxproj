@@ -8,103 +8,103 @@
 			0000152D02C7E14AF6800000 /* AudioEngine.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/AudioEngine/AudioEngine.swift;
+				path = ../SoundAmplifier/AudioEngine/AudioEngine.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF6800002 /* AudioProcessor.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/AudioEngine/AudioProcessor.swift;
+				path = ../SoundAmplifier/AudioEngine/AudioProcessor.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF6800004 /* NoiseReductionFilter.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/AudioProcessing/NoiseReductionFilter.swift;
+				path = ../SoundAmplifier/AudioProcessing/NoiseReductionFilter.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF6800006 /* VoiceBoostFilter.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/AudioProcessing/VoiceBoostFilter.swift;
+				path = ../SoundAmplifier/AudioProcessing/VoiceBoostFilter.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF6800008 /* EqualizerFilter.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/Filters/EqualizerFilter.swift;
+				path = ../SoundAmplifier/Filters/EqualizerFilter.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF680000A /* LimiterProtection.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/Filters/LimiterProtection.swift;
+				path = ../SoundAmplifier/Filters/LimiterProtection.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF680000C /* AppSettings.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/Models/AppSettings.swift;
+				path = ../SoundAmplifier/Models/AppSettings.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF680000E /* SoundAmplifierApp.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/SoundAmplifierApp.swift;
+				path = ../SoundAmplifier/SoundAmplifierApp.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF6800010 /* AudioDeviceManager.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/Utilities/AudioDeviceManager.swift;
+				path = ../SoundAmplifier/Utilities/AudioDeviceManager.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF6800012 /* ViewExtensions.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/Utilities/ViewExtensions.swift;
+				path = ../SoundAmplifier/Utilities/ViewExtensions.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF6800014 /* MainViewModel.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/ViewModels/MainViewModel.swift;
+				path = ../SoundAmplifier/ViewModels/MainViewModel.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF6800016 /* SettingsViewModel.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/ViewModels/SettingsViewModel.swift;
+				path = ../SoundAmplifier/ViewModels/SettingsViewModel.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF6800018 /* MainView.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/Views/MainView.swift;
+				path = ../SoundAmplifier/Views/MainView.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF680001A /* OnboardingView.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/Views/OnboardingView.swift;
+				path = ../SoundAmplifier/Views/OnboardingView.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF680001C /* SettingsView.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/Views/SettingsView.swift;
+				path = ../SoundAmplifier/Views/SettingsView.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF680001E /* WaveformView.swift */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = sourcecode.swift;
-				path = SoundAmplifier/Views/WaveformView.swift;
+				path = ../SoundAmplifier/Views/WaveformView.swift;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF6800020 /* Info.plist */ = {
 				isa = PBXFileReference;
 				lastKnownFileType = text.plist.xml;
-				path = SoundAmplifier/Info.plist;
+				path = ../SoundAmplifier/Info.plist;
 				sourceTree = "<group>";
 			};
 			0000152D02C7E14AF6800021 /* SoundAmplifier.app */ = {
@@ -250,7 +250,7 @@
 			0000152D02C7E14AF6800028 = {
 				isa = XCBuildConfiguration;
 				buildSettings = {
-					INFOPLIST_FILE = SoundAmplifier/Info.plist;
+					INFOPLIST_FILE = ../SoundAmplifier/Info.plist ;
 					PRODUCT_NAME = "Sound Amplifier";
 					PRODUCT_BUNDLE_IDENTIFIER = com.soundamplifier.app;
 					SWIFT_VERSION = 5.9;
@@ -266,7 +266,7 @@
 			0000152D02C7E14AF6800029 = {
 				isa = XCBuildConfiguration;
 				buildSettings = {
-					INFOPLIST_FILE = SoundAmplifier/Info.plist;
+					INFOPLIST_FILE = ../SoundAmplifier/Info.plist ;
 					PRODUCT_NAME = "Sound Amplifier";
 					PRODUCT_BUNDLE_IDENTIFIER = com.soundamplifier.app;
 					SWIFT_VERSION = 5.9;

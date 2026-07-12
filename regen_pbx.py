@@ -8,6 +8,9 @@ for p in sorted(root.rglob('*.swift')):
     files.append(p)
 info_plist = root / 'Info.plist'
 
+def rel_path(path: Path) -> str:
+    return os.path.relpath(path, project_dir).replace('\\', '/')
+
 def idhex(i):
     return f"{i:024X}"
 
@@ -40,9 +43,9 @@ sources_phase_id = new_id()
 
 entries = []
 for fid, p in file_refs:
-    rel = p.as_posix()
+    rel = rel_path(p)
     entries.append(f"\t\t\t{fid} /* {p.name} */ = {{\n\t\t\t\tisa = PBXFileReference;\n\t\t\t\tlastKnownFileType = sourcecode.swift;\n\t\t\t\tpath = {rel};\n\t\t\t\tsourceTree = \"<group>\";\n\t\t\t}};\n")
-entries.append(f"\t\t\t{info_id} /* Info.plist */ = {{\n\t\t\t\tisa = PBXFileReference;\n\t\t\t\tlastKnownFileType = text.plist.xml;\n\t\t\t\tpath = SoundAmplifier/Info.plist;\n\t\t\t\tsourceTree = \"<group>\";\n\t\t\t}};\n")
+entries.append(f"\t\t\t{info_id} /* Info.plist */ = {{\n\t\t\t\tisa = PBXFileReference;\n\t\t\t\tlastKnownFileType = text.plist.xml;\n\t\t\t\tpath = {rel_path(info_plist)};\n\t\t\t\tsourceTree = \"<group>\";\n\t\t\t}};\n")
 entries.append(f"\t\t\t{app_id} /* SoundAmplifier.app */ = {{\n\t\t\t\tisa = PBXFileReference;\n\t\t\t\texplicitFileType = wrapper.application;\n\t\t\t\tpath = SoundAmplifier.app;\n\t\t\t\tsourceTree = BUILT_PRODUCTS_DIR;\n\t\t\t}};\n")
 
 for bf, fid, name in build_files:
@@ -80,7 +83,7 @@ for cid, name in [(def_cfg_id, 'Debug'), (rel_cfg_id, 'Release')]:
     entries.append("\t\t\t" + cid + " = {\n")
     entries.append("\t\t\t\tisa = XCBuildConfiguration;\n")
     entries.append("\t\t\t\tbuildSettings = {\n")
-    entries.append("\t\t\t\t\tINFOPLIST_FILE = SoundAmplifier/Info.plist;\n")
+    entries.append("\t\t\t\t\tINFOPLIST_FILE = {} ;\n".format(rel_path(info_plist)))
     entries.append("\t\t\t\t\tPRODUCT_NAME = \"Sound Amplifier\";\n")
     entries.append("\t\t\t\t\tPRODUCT_BUNDLE_IDENTIFIER = com.soundamplifier.app;\n")
     entries.append("\t\t\t\t\tSWIFT_VERSION = 5.9;\n")
