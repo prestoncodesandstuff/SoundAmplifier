@@ -242,8 +242,8 @@
 				);
 				dependencies = (
 				);
-				name = "Sound Amplifier";
-				productName = "Sound Amplifier";
+				name = "SoundAmplifier";
+				productName = "SoundAmplifier";
 				productReference = 0000152D02C7E14AF6800021 /* SoundAmplifier.app */;
 				productType = "com.apple.product-type.application";
 			};
@@ -251,7 +251,7 @@
 				isa = XCBuildConfiguration;
 				buildSettings = {
 					INFOPLIST_FILE = ../SoundAmplifier/Info.plist ;
-					PRODUCT_NAME = "Sound Amplifier";
+					PRODUCT_NAME = "SoundAmplifier";
 					PRODUCT_BUNDLE_IDENTIFIER = com.soundamplifier.app;
 					SWIFT_VERSION = 5.9;
 					IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -267,7 +267,7 @@
 				isa = XCBuildConfiguration;
 				buildSettings = {
 					INFOPLIST_FILE = ../SoundAmplifier/Info.plist ;
-					PRODUCT_NAME = "Sound Amplifier";
+					PRODUCT_NAME = "SoundAmplifier";
 					PRODUCT_BUNDLE_IDENTIFIER = com.soundamplifier.app;
 					SWIFT_VERSION = 5.9;
 					IPHONEOS_DEPLOYMENT_TARGET = 15.0;
