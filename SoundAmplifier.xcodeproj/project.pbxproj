@@ -5,7 +5,315 @@
 	};
 	objectVersion = 56;
 	objects = {
-		/* Build configuration files */
+			0000152D02C7E14AF6800000 /* AudioEngine.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/AudioEngine/AudioEngine.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF6800002 /* AudioProcessor.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/AudioEngine/AudioProcessor.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF6800004 /* NoiseReductionFilter.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/AudioProcessing/NoiseReductionFilter.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF6800006 /* VoiceBoostFilter.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/AudioProcessing/VoiceBoostFilter.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF6800008 /* EqualizerFilter.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/Filters/EqualizerFilter.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF680000A /* LimiterProtection.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/Filters/LimiterProtection.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF680000C /* AppSettings.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/Models/AppSettings.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF680000E /* SoundAmplifierApp.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/SoundAmplifierApp.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF6800010 /* AudioDeviceManager.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/Utilities/AudioDeviceManager.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF6800012 /* ViewExtensions.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/Utilities/ViewExtensions.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF6800014 /* MainViewModel.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/ViewModels/MainViewModel.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF6800016 /* SettingsViewModel.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/ViewModels/SettingsViewModel.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF6800018 /* MainView.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/Views/MainView.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF680001A /* OnboardingView.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/Views/OnboardingView.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF680001C /* SettingsView.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/Views/SettingsView.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF680001E /* WaveformView.swift */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = sourcecode.swift;
+				path = SoundAmplifier/Views/WaveformView.swift;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF6800020 /* Info.plist */ = {
+				isa = PBXFileReference;
+				lastKnownFileType = text.plist.xml;
+				path = SoundAmplifier/Info.plist;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF6800021 /* SoundAmplifier.app */ = {
+				isa = PBXFileReference;
+				explicitFileType = wrapper.application;
+				path = SoundAmplifier.app;
+				sourceTree = BUILT_PRODUCTS_DIR;
+			};
+			0000152D02C7E14AF6800001 /* AudioEngine.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF6800000 /* AudioEngine.swift */;
+			};
+			0000152D02C7E14AF6800003 /* AudioProcessor.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF6800002 /* AudioProcessor.swift */;
+			};
+			0000152D02C7E14AF6800005 /* NoiseReductionFilter.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF6800004 /* NoiseReductionFilter.swift */;
+			};
+			0000152D02C7E14AF6800007 /* VoiceBoostFilter.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF6800006 /* VoiceBoostFilter.swift */;
+			};
+			0000152D02C7E14AF6800009 /* EqualizerFilter.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF6800008 /* EqualizerFilter.swift */;
+			};
+			0000152D02C7E14AF680000B /* LimiterProtection.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF680000A /* LimiterProtection.swift */;
+			};
+			0000152D02C7E14AF680000D /* AppSettings.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF680000C /* AppSettings.swift */;
+			};
+			0000152D02C7E14AF680000F /* SoundAmplifierApp.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF680000E /* SoundAmplifierApp.swift */;
+			};
+			0000152D02C7E14AF6800011 /* AudioDeviceManager.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF6800010 /* AudioDeviceManager.swift */;
+			};
+			0000152D02C7E14AF6800013 /* ViewExtensions.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF6800012 /* ViewExtensions.swift */;
+			};
+			0000152D02C7E14AF6800015 /* MainViewModel.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF6800014 /* MainViewModel.swift */;
+			};
+			0000152D02C7E14AF6800017 /* SettingsViewModel.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF6800016 /* SettingsViewModel.swift */;
+			};
+			0000152D02C7E14AF6800019 /* MainView.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF6800018 /* MainView.swift */;
+			};
+			0000152D02C7E14AF680001B /* OnboardingView.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF680001A /* OnboardingView.swift */;
+			};
+			0000152D02C7E14AF680001D /* SettingsView.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF680001C /* SettingsView.swift */;
+			};
+			0000152D02C7E14AF680001F /* WaveformView.swift */ = {
+				isa = PBXBuildFile;
+				fileRef = 0000152D02C7E14AF680001E /* WaveformView.swift */;
+			};
+			0000152D02C7E14AF6800022 = {
+				isa = PBXGroup;
+				children = (
+					0000152D02C7E14AF6800000 /* AudioEngine.swift */,
+					0000152D02C7E14AF6800002 /* AudioProcessor.swift */,
+					0000152D02C7E14AF6800004 /* NoiseReductionFilter.swift */,
+					0000152D02C7E14AF6800006 /* VoiceBoostFilter.swift */,
+					0000152D02C7E14AF6800008 /* EqualizerFilter.swift */,
+					0000152D02C7E14AF680000A /* LimiterProtection.swift */,
+					0000152D02C7E14AF680000C /* AppSettings.swift */,
+					0000152D02C7E14AF680000E /* SoundAmplifierApp.swift */,
+					0000152D02C7E14AF6800010 /* AudioDeviceManager.swift */,
+					0000152D02C7E14AF6800012 /* ViewExtensions.swift */,
+					0000152D02C7E14AF6800014 /* MainViewModel.swift */,
+					0000152D02C7E14AF6800016 /* SettingsViewModel.swift */,
+					0000152D02C7E14AF6800018 /* MainView.swift */,
+					0000152D02C7E14AF680001A /* OnboardingView.swift */,
+					0000152D02C7E14AF680001C /* SettingsView.swift */,
+					0000152D02C7E14AF680001E /* WaveformView.swift */,
+					0000152D02C7E14AF6800020 /* Info.plist */,
+				);
+				path = "";
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF6800023 = {
+				isa = PBXGroup;
+				children = (
+					0000152D02C7E14AF6800021 /* SoundAmplifier.app */,
+				);
+				name = Products;
+				sourceTree = "<group>";
+			};
+			0000152D02C7E14AF680002A = {
+				isa = PBXSourcesBuildPhase;
+				buildActionMask = 2147483647;
+				files = (
+					0000152D02C7E14AF6800001 /* AudioEngine.swift */,
+					0000152D02C7E14AF6800003 /* AudioProcessor.swift */,
+					0000152D02C7E14AF6800005 /* NoiseReductionFilter.swift */,
+					0000152D02C7E14AF6800007 /* VoiceBoostFilter.swift */,
+					0000152D02C7E14AF6800009 /* EqualizerFilter.swift */,
+					0000152D02C7E14AF680000B /* LimiterProtection.swift */,
+					0000152D02C7E14AF680000D /* AppSettings.swift */,
+					0000152D02C7E14AF680000F /* SoundAmplifierApp.swift */,
+					0000152D02C7E14AF6800011 /* AudioDeviceManager.swift */,
+					0000152D02C7E14AF6800013 /* ViewExtensions.swift */,
+					0000152D02C7E14AF6800015 /* MainViewModel.swift */,
+					0000152D02C7E14AF6800017 /* SettingsViewModel.swift */,
+					0000152D02C7E14AF6800019 /* MainView.swift */,
+					0000152D02C7E14AF680001B /* OnboardingView.swift */,
+					0000152D02C7E14AF680001D /* SettingsView.swift */,
+					0000152D02C7E14AF680001F /* WaveformView.swift */,
+				);
+				runOnlyForDeploymentPostprocessing = 0;
+			};
+			0000152D02C7E14AF6800025 = {
+				isa = PBXNativeTarget;
+				buildConfigurationList = 0000152D02C7E14AF6800027 /* Build configuration list for Sound Amplifier */;
+				buildPhases = (
+					0000152D02C7E14AF680002A /* Sources */,
+				);
+				buildRules = (
+				);
+				dependencies = (
+				);
+				name = "Sound Amplifier";
+				productName = "Sound Amplifier";
+				productReference = 0000152D02C7E14AF6800021 /* SoundAmplifier.app */;
+				productType = "com.apple.product-type.application";
+			};
+			0000152D02C7E14AF6800028 = {
+				isa = XCBuildConfiguration;
+				buildSettings = {
+					INFOPLIST_FILE = SoundAmplifier/Info.plist;
+					PRODUCT_NAME = "Sound Amplifier";
+					PRODUCT_BUNDLE_IDENTIFIER = com.soundamplifier.app;
+					SWIFT_VERSION = 5.9;
+					IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+					CODE_SIGN_STYLE = Automatic;
+					ENABLE_BITCODE = NO;
+					SWIFT_COMPILATION_MODE = wholemodule;
+					GCC_OPTIMIZATION_LEVEL = 3;
+					SWIFT_OPTIMIZATION_LEVEL = -Owholemodule;
+				};
+				name = Debug ;
+			};
+			0000152D02C7E14AF6800029 = {
+				isa = XCBuildConfiguration;
+				buildSettings = {
+					INFOPLIST_FILE = SoundAmplifier/Info.plist;
+					PRODUCT_NAME = "Sound Amplifier";
+					PRODUCT_BUNDLE_IDENTIFIER = com.soundamplifier.app;
+					SWIFT_VERSION = 5.9;
+					IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+					CODE_SIGN_STYLE = Automatic;
+					ENABLE_BITCODE = NO;
+					SWIFT_COMPILATION_MODE = wholemodule;
+					GCC_OPTIMIZATION_LEVEL = 3;
+					SWIFT_OPTIMIZATION_LEVEL = -Owholemodule;
+				};
+				name = Release ;
+			};
+			0000152D02C7E14AF6800026 = {
+				isa = XCConfigurationList;
+				buildConfigurations = (
+					0000152D02C7E14AF6800028 /* Debug */,
+					0000152D02C7E14AF6800029 /* Release */,
+				);
+				defaultConfigurationIsVisible = 0;
+				defaultConfigurationName = Release;
+			};
+			0000152D02C7E14AF6800027 = {
+				isa = XCConfigurationList;
+				buildConfigurations = (
+					0000152D02C7E14AF6800028 /* Debug */,
+					0000152D02C7E14AF6800029 /* Release */,
+				);
+				defaultConfigurationIsVisible = 0;
+				defaultConfigurationName = Release;
+			};
+			0000152D02C7E14AF6800024 = {
+				isa = PBXProject;
+				attributes = {
+					LastUpgradeCheck = 1430;
+				};
+				buildConfigurationList = 0000152D02C7E14AF6800026 ;
+				compatibilityVersion = "Xcode 15.0";
+				developmentRegion = en;
+				hasScannedForEncodings = 0;
+				mainGroup = 0000152D02C7E14AF6800022 ;
+				productRefGroup = 0000152D02C7E14AF6800023 ;
+				projectDirPath = "";
+				projectRoot = "";
+				targets = (
+					0000152D02C7E14AF6800025 ,
+				);
+			};
 	};
-	rootObject = 00000000000000000000000000000001;
+	rootObject = 0000152D02C7E14AF6800024;
 }
